@@ -1,0 +1,11 @@
+recash-merchant-9200:
+    image: recash-merchant:latest
+    restart: always
+    net: host
+    command: ["-Dhttp.port=9200"]
+
+recash-merchant-9201:
+    image: recash-merchant:latest
+    restart: always
+    net: host
+    command: ["-Dhttp.port=9201"]
